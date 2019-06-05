@@ -1,0 +1,384 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\ComputerOrganization\Experiment2\simulation\modelsim
+valu
+IW;e>;z05P9I_LPDTi`>Qo1
+VKc:bVz32gc5X2ZbjUde9O3
+Z1 dD:\ComputerOrganization\Experiment2\simulation\modelsim
+w1559225579
+8D:/ComputerOrganization/Experiment2/source/alu.v
+FD:/ComputerOrganization/Experiment2/source/alu.v
+L0 1
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source -O0
+!i10b 1
+!s100 oY_RP0Q0CjYe_H1da_OHD2
+!s85 0
+!s108 1559660421.499000
+!s107 D:/ComputerOrganization/Experiment2/source/alu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/alu.v|
+!s101 -O0
+vdff32
+Io9=ZL_096iK9`kFUXajW_3
+VUO7_EzIi9>SeN7M;XG9<c0
+R1
+w1305031718
+8D:/ComputerOrganization/Experiment2/source/dff32.v
+FD:/ComputerOrganization/Experiment2/source/dff32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 hcRVXeJQ[_90ln9N<S9;11
+!s85 0
+!s108 1559660421.321000
+!s107 D:/ComputerOrganization/Experiment2/source/dff32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/dff32.v|
+!s101 -O0
+vio_input_mux
+IF3<:Xc7Bn@f[G>3O193L<1
+VE]W_C0AC;VoBAl[RC@dLB2
+R1
+Z5 w1559555748
+Z6 8D:/ComputerOrganization/Experiment2/source/io_input_reg.v
+Z7 FD:/ComputerOrganization/Experiment2/source/io_input_reg.v
+L0 21
+R2
+r1
+31
+Z8 !s108 1559660422.000000
+Z9 !s107 D:/ComputerOrganization/Experiment2/source/io_input_reg.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/io_input_reg.v|
+R3
+R4
+!i10b 1
+!s100 O@4Ee1lglNWz5lQMVim_e2
+!s85 0
+!s101 -O0
+vio_input_reg
+I<7Hc;<D`NC4fQaV26[B031
+V7KKB=Y^PcjQoCkRGb;;Xz1
+R1
+R5
+R6
+R7
+L0 1
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+!i10b 1
+!s100 k32`]Y_=]mCF;W9LM?lX;3
+!s85 0
+!s101 -O0
+vio_output_reg
+I=2DcARBj]4DZY@B=>^73`3
+V5g4;QWobLiLiRTfD3RJ880
+R1
+w1559534856
+8D:/ComputerOrganization/Experiment2/source/io_output_reg.v
+FD:/ComputerOrganization/Experiment2/source/io_output_reg.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 Cmd0U;G_b^lI2mGeGU?XK0
+!s85 0
+!s108 1559660421.672000
+!s107 D:/ComputerOrganization/Experiment2/source/io_output_reg.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/io_output_reg.v|
+!s101 -O0
+vlpm_ram_dq_dram
+I8YN`ICElW`8aAgRFje6b43
+V;^>UgMFOjF@EZ@A<NMAW`0
+R1
+w1305005947
+8D:/ComputerOrganization/Experiment2/source/lpm_ram_dq_dram.v
+FD:/ComputerOrganization/Experiment2/source/lpm_ram_dq_dram.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 1k4_MkSTfVD@ld7DV;O^Z2
+!s85 0
+!s108 1559660421.156000
+!s107 D:/ComputerOrganization/Experiment2/source/lpm_ram_dq_dram.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/lpm_ram_dq_dram.v|
+!s101 -O0
+vlpm_rom_irom
+IQd]@dZhS?<6nD3lR[mM9E1
+V6I?:oUA0HYdli42?U:6:L0
+R1
+w1559535217
+8D:/ComputerOrganization/Experiment2/source/lpm_rom_irom.v
+FD:/ComputerOrganization/Experiment2/source/lpm_rom_irom.v
+L0 39
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 FZ9Uz3bcUkL[QNmQR`?SW3
+!s85 0
+!s108 1559660420.996000
+!s107 D:/ComputerOrganization/Experiment2/source/lpm_rom_irom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/lpm_rom_irom.v|
+!s101 -O0
+vmux2x32
+IUF4mD3?[[NCLZ42LJ8[OC0
+V_8o=]o8CzEDeX@^n?a@zP3
+R1
+w1252908544
+8D:/ComputerOrganization/Experiment2/source/mux2x32.v
+FD:/ComputerOrganization/Experiment2/source/mux2x32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 N^b97_gO=9QMeVNQ_bm]F2
+!s85 0
+!s108 1559660420.561000
+!s107 D:/ComputerOrganization/Experiment2/source/mux2x32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/mux2x32.v|
+!s101 -O0
+vmux2x5
+I@G6D?:InY3BF_m4Zo``nh3
+Vah3g>_]Y^Qz2GXD7HR^<<3
+R1
+w1253170143
+8D:/ComputerOrganization/Experiment2/source/mux2x5.v
+FD:/ComputerOrganization/Experiment2/source/mux2x5.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ]8l5EQVI[>400>99VI=jP2
+!s85 0
+!s108 1559660420.829000
+!s107 D:/ComputerOrganization/Experiment2/source/mux2x5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/mux2x5.v|
+!s101 -O0
+vmux4x32
+I;b7MB26GmSeXJcTGLc:X`0
+VM:hYY`k:C]4^:^k7d8C]M0
+R1
+w1252998688
+8D:/ComputerOrganization/Experiment2/source/mux4x32.v
+FD:/ComputerOrganization/Experiment2/source/mux4x32.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 ]QX65UKk2UMAR_zJo47gZ0
+!s85 0
+!s108 1559660420.306000
+!s107 D:/ComputerOrganization/Experiment2/source/mux4x32.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/mux4x32.v|
+!s101 -O0
+vpll
+IZGzoKh3cg75SDPA_Ne]b:1
+V[0^a9QZbKz_amg_C^b1063
+R1
+w1559548114
+8D:/ComputerOrganization/Experiment2/pll_sim/pll.vo
+FD:/ComputerOrganization/Experiment2/pll_sim/pll.vo
+L0 31
+R2
+r1
+31
+o-O0
+!i10b 1
+!s100 723>j??oZz1d5Vm]X:D>A0
+!s85 0
+!s108 1559660418.573000
+!s107 D:/ComputerOrganization/Experiment2/pll_sim/pll.vo|
+!s90 -reportprogress|300|D:/ComputerOrganization/Experiment2/pll_sim/pll.vo|
+!s101 -O0
+vregfile
+I<MCV^n>U8FGSdoNT=8g5;3
+VHL?YD<z4Tlb1gm`0^XW@D2
+R1
+w1559395063
+8D:/ComputerOrganization/Experiment2/source/regfile.v
+FD:/ComputerOrganization/Experiment2/source/regfile.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 zP2Ynb`k=[BP;4bLk6KL30
+!s85 0
+!s108 1559660420.150000
+!s107 D:/ComputerOrganization/Experiment2/source/regfile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/regfile.v|
+!s101 -O0
+vsc_computer
+I<N=55gY:@iaP?P;JG_mCW1
+VN4dBLnHYOo0QOVOam>1e93
+R1
+Z11 w1559557869
+Z12 8D:/ComputerOrganization/Experiment2/source/sc_computer.v
+Z13 FD:/ComputerOrganization/Experiment2/source/sc_computer.v
+L0 1
+R2
+r1
+31
+Z14 !s108 1559660419.929000
+Z15 !s107 D:/ComputerOrganization/Experiment2/source/sc_computer.v|
+Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/sc_computer.v|
+R3
+R4
+!i10b 1
+!s100 mPnR[FM^]8nVWlb6N=O@?0
+!s85 0
+!s101 -O0
+vsc_computer_sim
+!i10b 1
+!s100 ?mg0Y@1^gb]7ai7U][VPi2
+I6eiO2z<^mSOgBVOeVHWJJ3
+V^jiC<6F7]doek[nRMoOol1
+R1
+w1559659570
+8D:/ComputerOrganization/Experiment2/sc_computer_sim.v
+FD:/ComputerOrganization/Experiment2/sc_computer_sim.v
+L0 26
+R2
+r1
+!s85 0
+31
+!s108 1559660422.288000
+!s107 D:/ComputerOrganization/Experiment2/sc_computer_sim.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2|D:/ComputerOrganization/Experiment2/sc_computer_sim.v|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2 -O0
+vsc_cpu
+IHlI5@nAbYF4]dEEboKY7c3
+V:mi8;^<LZUMNBc_]kEVbj2
+R1
+w1559392932
+8D:/ComputerOrganization/Experiment2/source/sc_cpu.v
+FD:/ComputerOrganization/Experiment2/source/sc_cpu.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 _C=79NC0H:?Al:I^G2TLS1
+!s85 0
+!s108 1559660419.363000
+!s107 D:/ComputerOrganization/Experiment2/source/sc_cpu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/sc_cpu.v|
+!s101 -O0
+vsc_cu
+IEl`hX`4M[Mo6KU_Q9F66K1
+VAlN72Pg@l_c4ao;V0co7c3
+R1
+w1559393955
+8D:/ComputerOrganization/Experiment2/source/sc_cu.v
+FD:/ComputerOrganization/Experiment2/source/sc_cu.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 =D;ZzJ5zPokGB2`Dc`MbF2
+!s85 0
+!s108 1559660419.123000
+!s107 D:/ComputerOrganization/Experiment2/source/sc_cu.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/sc_cu.v|
+!s101 -O0
+vsc_datamem
+I2WEJGEP?dHI;eUG`e369S3
+VK?68_z0IaM8If52k<`66a1
+R1
+w1559555637
+8D:/ComputerOrganization/Experiment2/source/sc_datamem.v
+FD:/ComputerOrganization/Experiment2/source/sc_datamem.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 N458ZWRaR69H9e<5oiVzC2
+!s85 0
+!s108 1559660418.944000
+!s107 D:/ComputerOrganization/Experiment2/source/sc_datamem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/sc_datamem.v|
+!s101 -O0
+vsc_instmem
+IT1;7KnGeg;k:[?>IzhjIb0
+VkU`UIUgSeP=c3TJLN64XO2
+R1
+w1305084523
+8D:/ComputerOrganization/Experiment2/source/sc_instmen.v
+FD:/ComputerOrganization/Experiment2/source/sc_instmen.v
+L0 1
+R2
+r1
+31
+R3
+R4
+!i10b 1
+!s100 =lgKT_TF2fhbQYfYhTd202
+!s85 0
+!s108 1559660418.762000
+!s107 D:/ComputerOrganization/Experiment2/source/sc_instmen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/Experiment2/source|D:/ComputerOrganization/Experiment2/source/sc_instmen.v|
+!s101 -O0
+vsevenseg
+IiiInj4RHFQa6O;gmR9>f92
+V<kz4<ET@H::]Aoef`6B9U3
+R1
+R11
+R12
+R13
+L0 34
+R2
+r1
+31
+R14
+R15
+R16
+R3
+R4
+!i10b 1
+!s100 l^==eYicS``a:X3?5a>_63
+!s85 0
+!s101 -O0
