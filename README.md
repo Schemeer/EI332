@@ -5,7 +5,7 @@ Source code for three experiments of course EI332 in SJTU.
 
 ![truthtable](./single_cpu/report/truthtable.png)
 
-![single_cpu](./single_cpu/report/gsingle_cpu.png)
+![single_cpu](./single_cpu/report/single_cpu.png)
 
 ![pipelined_cpu](./pipelined_cpu/report/pipelined_cpu.png)
 
