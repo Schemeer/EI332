@@ -82,7 +82,7 @@ module	pipelined_computer (	resetn, clock, mem_clock, pc, inst, ealu, malu, walu
 	//EXE/MEM流水线寄存器模块，起承接 EXE 阶段和 MEM 阶段的流水任务。 
 	//在 clock 上升沿时，将 EXE 阶段需传递给 MEM 阶段的信息，锁存在 EXE/MEM 
 	//流水线寄存器中，并呈现在 MEM 阶段。       
-	pipemem				mem_stage(	mwmem, malu, mb, clock, resetn, mem_clock, mmo, in_port0, in_port1, out_port0, out_port1, out_port2, out_port3, out_port4, out_port5 );        
+	pipemem				mem_stage(	mwmem, wm2reg, wrn, mrn, malu, mb, wmo, clock, resetn, mem_clock, mmo, in_port0, in_port1, out_port0, out_port1, out_port2, out_port3, out_port4, out_port5 );        
 	//  MEM stage 
 	//MEM 数据存取模块。其中包含对数据同步 RAM 的读写访问。
 	// 注意 mem_clock。 
