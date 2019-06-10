@@ -1,12 +1,12 @@
 module pipeid (	mwreg, mrn, ern, ewreg, em2reg, mm2reg, dpc4, inst,
-						wrn, wdi, ealu, malu, mmo, wwreg, clock, resetn,
+						wrn, wdi, ealu, malu, mmo, wwreg, clock, mem_clock, resetn,
 						bpc, jpc, pcsource, wpcir, dwreg, dm2reg, dwmem, daluc,
 						daluimm, da, db, dimm, drn, dshift, djal, dsa );
 	
 	
 	input [31:0]	dpc4, inst, wdi, ealu, malu, mmo;
 	input [4:0]		mrn, ern, wrn;
-	input 			mwreg, ewreg, em2reg, mm2reg, wwreg, clock, resetn;
+	input 			mwreg, ewreg, em2reg, mm2reg, wwreg, clock, resetn, mem_clock;
 	
 	output [31:0]	bpc, jpc, da, db, dimm, dsa;
 	output [4:0]	drn;
@@ -35,7 +35,7 @@ module pipeid (	mwreg, mrn, ern, ewreg, em2reg, mm2reg, dpc4, inst,
 	pipecu	pcu(	op, func, z, dwmem_tmp, dwreg_tmp, dregrt, dm2reg_tmp, daluc_tmp, dshift_tmp,
 						daluimm_tmp, pcsource, djal_tmp, sext);
 	
-	regfile rf(rs, rt, wdi, wrn, wwreg, clock, resetn, qa, qb);
+	regfile rf(rs, rt, wdi, wrn, wwreg, mem_clock, resetn, qa, qb);
 	
 	assign	wpcir = ~(em2reg & ((ern == rs)|(ern == rt)) & ~dwmem_tmp);
 	assign	dwreg = wpcir?dwreg_tmp:1'b0;

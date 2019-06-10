@@ -58,7 +58,7 @@ module	pipelined_computer (	resetn, clock, mem_clock, pc, inst, ealu, malu, walu
 	//在 clock 上升沿时，将 IF 阶段需传递给 ID 阶段的信息，锁存在 IF/ID 流水线寄存器 
 	//中，并呈现在 ID 阶段。       
 	pipeid				id_stage	(	mwreg, mrn, ern, ewreg, em2reg, mm2reg, dpc4, inst,
-											wrn, wdi, ealu, malu, mmo, wwreg, clock, resetn,
+											wrn, wdi, ealu, malu, mmo, wwreg, clock, mem_clock, resetn,
 											bpc, jpc, pcsource, wpcir, dwreg, dm2reg, dwmem, daluc,
 											daluimm, da, db, dimm, drn, dshift, djal, dsa );
 	//  ID stage 
