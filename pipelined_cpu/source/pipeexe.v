@@ -15,6 +15,6 @@ module pipeexe (	ealuc, ealuimm, ea, eb, eimm, esa, eshift, ern0, epc4, ejal, er
 	mux2x32 alu_b(eb,eimm,ealuimm,alub);
 	mux2x32 alu_a(ea,esa,eshift,alua);
 	alu agorithm_logic_unit(alua,alub,ealuc,aluout);
-	mux2x32 call_sub(aluout,epc8,ejal,ealu);
+	mux2x32 call_sub(aluout,epc4,ejal,ealu);
 	assign ern = ern0 | {5{ejal}};
 endmodule
