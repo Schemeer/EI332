@@ -1,12 +1,12 @@
-Fitter Status : Successful - Wed Jun 05 17:09:27 2019
+Fitter Status : Successful - Mon Jun 10 22:55:30 2019
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : pipelined_computer
 Top-level Entity Name : pipelined_computer_test
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Preliminary
-Logic utilization (in ALMs) : 1,339 / 32,070 ( 4 % )
-Total registers : 1451
+Logic utilization (in ALMs) : 1,444 / 32,070 ( 5 % )
+Total registers : 1499
 Total pins : 62 / 457 ( 14 % )
 Total virtual pins : 0
 Total block memory bits : 3,072 / 4,065,280 ( < 1 % )

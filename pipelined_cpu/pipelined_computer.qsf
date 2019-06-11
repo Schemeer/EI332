@@ -93,6 +93,37 @@ set_location_assignment PIN_AB27 -to hex5[3]
 set_location_assignment PIN_AB26 -to hex5[4]
 set_location_assignment PIN_AA26 -to hex5[5]
 set_location_assignment PIN_AA25 -to hex5[6]
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH pipelined_computer_sim -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME pipelined_computer_sim -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id pipelined_computer_sim
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME pipelined_computer_sim -section_id pipelined_computer_sim
+set_global_assignment -name EDA_TEST_BENCH_FILE pipelined_computer_sim.v -section_id pipelined_computer_sim
+set_location_assignment PIN_AF14 -to CLOCK_50
+set_location_assignment PIN_AB12 -to input0[0]
+set_location_assignment PIN_AC12 -to input0[1]
+set_location_assignment PIN_AF9 -to input0[2]
+set_location_assignment PIN_AF10 -to input0[3]
+set_location_assignment PIN_AD11 -to input1[0]
+set_location_assignment PIN_AD12 -to input1[1]
+set_location_assignment PIN_AE11 -to input1[2]
+set_location_assignment PIN_AC9 -to input1[3]
+set_location_assignment PIN_Y16 -to reset
+set_location_assignment PIN_V16 -to testout[0]
+set_location_assignment PIN_W16 -to testout[1]
+set_location_assignment PIN_V17 -to testout[2]
+set_location_assignment PIN_V18 -to testout[3]
+set_location_assignment PIN_W17 -to testout[4]
+set_location_assignment PIN_W19 -to testout[5]
+set_location_assignment PIN_Y19 -to testout[6]
+set_location_assignment PIN_W20 -to testout[7]
+set_location_assignment PIN_W21 -to testout[8]
+set_location_assignment PIN_Y21 -to testout[9]
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE source/pipefdreg.v
 set_global_assignment -name VERILOG_FILE source/alu.v
 set_global_assignment -name VERILOG_FILE source/sevenseg.v
 set_global_assignment -name VERILOG_FILE source/regfile.v
@@ -114,38 +145,8 @@ set_global_assignment -name VERILOG_FILE source/pipefereg.v
 set_global_assignment -name VERILOG_FILE source/irom.v
 set_global_assignment -name VERILOG_FILE source/pipecu.v
 set_global_assignment -name VERILOG_FILE pipelined_computer_sim.v
-set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH pipelined_computer_sim -section_id eda_simulation
-set_global_assignment -name EDA_TEST_BENCH_NAME pipelined_computer_sim -section_id eda_simulation
-set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id pipelined_computer_sim
-set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME pipelined_computer_sim -section_id pipelined_computer_sim
-set_global_assignment -name EDA_TEST_BENCH_FILE pipelined_computer_sim.v -section_id pipelined_computer_sim
 set_global_assignment -name VERILOG_FILE source/inverse.v
 set_global_assignment -name BDF_FILE pipelined_computer_test.bdf
-set_location_assignment PIN_AF14 -to CLOCK_50
-set_location_assignment PIN_AB12 -to input0[0]
-set_location_assignment PIN_AC12 -to input0[1]
-set_location_assignment PIN_AF9 -to input0[2]
-set_location_assignment PIN_AF10 -to input0[3]
-set_location_assignment PIN_AD11 -to input1[0]
-set_location_assignment PIN_AD12 -to input1[1]
-set_location_assignment PIN_AE11 -to input1[2]
-set_location_assignment PIN_AC9 -to input1[3]
-set_location_assignment PIN_Y16 -to reset
 set_global_assignment -name SDC_FILE pipelined_computer_test.sdc
 set_global_assignment -name VERILOG_FILE source/fiftyM2one.v
-set_location_assignment PIN_V16 -to testout[0]
-set_location_assignment PIN_W16 -to testout[1]
-set_location_assignment PIN_V17 -to testout[2]
-set_location_assignment PIN_V18 -to testout[3]
-set_location_assignment PIN_W17 -to testout[4]
-set_location_assignment PIN_W19 -to testout[5]
-set_location_assignment PIN_Y19 -to testout[6]
-set_location_assignment PIN_W20 -to testout[7]
-set_location_assignment PIN_W21 -to testout[8]
-set_location_assignment PIN_Y21 -to testout[9]
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
