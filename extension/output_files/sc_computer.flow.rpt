@@ -1,0 +1,151 @@
+Flow report for sc_computer
+Tue Jun 04 23:04:11 2019
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Flow Summary                                                                 ;
++---------------------------------+--------------------------------------------+
+; Flow Status                     ; Successful - Tue Jun 04 23:04:11 2019      ;
+; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                   ; sc_computer                                ;
+; Top-level Entity Name           ; sc_computer_test                           ;
+; Family                          ; Cyclone V                                  ;
+; Device                          ; 5CSEMA5F31C6                               ;
+; Timing Models                   ; Preliminary                                ;
+; Logic utilization (in ALMs)     ; 1,328 / 32,070 ( 4 % )                     ;
+; Total registers                 ; 1069                                       ;
+; Total pins                      ; 64 / 457 ( 14 % )                          ;
+; Total virtual pins              ; 0                                          ;
+; Total block memory bits         ; 3,072 / 4,065,280 ( < 1 % )                ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0                                          ;
+; Total HSSI PMA RX Deserializers ; 0                                          ;
+; Total HSSI TX PCSs              ; 0                                          ;
+; Total HSSI TX Channels          ; 0                                          ;
+; Total PLLs                      ; 0 / 6 ( 0 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                              ;
++---------------------------------+--------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 06/04/2019 23:01:19 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; sc_computer         ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                            ;
++--------------------------------------+---------------------------------+---------------+------------------+-----------------+
+; Assignment Name                      ; Value                           ; Default Value ; Entity Name      ; Section Id      ;
++--------------------------------------+---------------------------------+---------------+------------------+-----------------+
+; COMPILER_SIGNATURE_ID                ; 109952957833597.155966047914808 ; --            ; --               ; --              ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --               ; sc_computer_sim ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; sc_computer_sim                 ; --            ; --               ; eda_simulation  ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --               ; eda_simulation  ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)       ; <None>        ; --               ; --              ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --               ; eda_simulation  ;
+; EDA_TEST_BENCH_FILE                  ; sc_computer_sim.v               ; --            ; --               ; sc_computer_sim ;
+; EDA_TEST_BENCH_MODULE_NAME           ; sc_computer_sim                 ; --            ; --               ; sc_computer_sim ;
+; EDA_TEST_BENCH_NAME                  ; sc_computer_sim                 ; --            ; --               ; eda_simulation  ;
+; EDA_TIME_SCALE                       ; 1 ps                            ; --            ; --               ; eda_simulation  ;
+; IP_TOOL_ENV                          ; mwpim                           ; --            ; pll              ; --              ;
+; IP_TOOL_ENV                          ; mwpim                           ; --            ; pll              ; --              ;
+; IP_TOOL_ENV                          ; mwpim                           ; --            ; pll_0002         ; --              ;
+; IP_TOOL_NAME                         ; altera_pll                      ; --            ; pll              ; --              ;
+; IP_TOOL_NAME                         ; altera_pll                      ; --            ; pll              ; --              ;
+; IP_TOOL_NAME                         ; altera_pll                      ; --            ; pll_0002         ; --              ;
+; IP_TOOL_VERSION                      ; 13.1                            ; --            ; pll              ; --              ;
+; IP_TOOL_VERSION                      ; 13.1                            ; --            ; pll              ; --              ;
+; IP_TOOL_VERSION                      ; 13.1                            ; --            ; pll_0002         ; --              ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                              ; --            ; --               ; --              ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                               ; --            ; --               ; --              ;
+; MISC_FILE                            ; pll.cmp                         ; --            ; --               ; --              ;
+; MISC_FILE                            ; pll_sim/pll.vo                  ; --            ; --               ; --              ;
+; PARTITION_COLOR                      ; 16764057                        ; --            ; sc_computer_test ; Top             ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING           ; --            ; sc_computer_test ; Top             ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                          ; --            ; sc_computer_test ; Top             ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                    ; --            ; --               ; --              ;
+; SPD_FILE                             ; pll.spd                         ; --            ; --               ; --              ;
+; SYNTHESIS_ONLY_QIP                   ; On                              ; --            ; --               ; --              ;
+; TOP_LEVEL_ENTITY                     ; sc_computer_test                ; sc_computer   ; --               ; --              ;
++--------------------------------------+---------------------------------+---------------+------------------+-----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4750 MB             ; 00:00:09                           ;
+; Fitter                    ; 00:02:08     ; 3.1                     ; 6094 MB             ; 00:02:46                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 4808 MB             ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:12     ; 1.9                     ; 5071 MB             ; 00:00:20                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4703 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:43     ; --                      ; --                  ; 00:03:29                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-V1J0N1I  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-V1J0N1I  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-V1J0N1I  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-V1J0N1I  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-V1J0N1I  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off sc_computer -c sc_computer
+quartus_fit --read_settings_files=off --write_settings_files=off sc_computer -c sc_computer
+quartus_asm --read_settings_files=off --write_settings_files=off sc_computer -c sc_computer
+quartus_sta sc_computer -c sc_computer
+quartus_eda --read_settings_files=off --write_settings_files=off sc_computer -c sc_computer
+
+
+
