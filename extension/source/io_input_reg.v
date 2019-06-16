@@ -1,7 +1,7 @@
 module io_input_reg(addr,io_clk,io_read_data,in_port0,in_port1);
 	
 	input		[31:0]	addr;
-	input		[4:0]	in_port0,in_port1;
+	input		[3:0]	in_port0,in_port1;
 	input					io_clk;
 	
 	output	[31:0]	io_read_data;
@@ -12,8 +12,8 @@ module io_input_reg(addr,io_clk,io_read_data,in_port0,in_port1);
 	
 	always @(posedge io_clk)
 		begin
-			in_reg0 <= {27'b0,in_port0};
-			in_reg1 <= {27'b0,in_port1};
+			in_reg0 <= {28'b0,in_port0};
+			in_reg1 <= {28'b0,in_port1};
 		end
 
 endmodule

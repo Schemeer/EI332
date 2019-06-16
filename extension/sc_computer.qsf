@@ -77,16 +77,14 @@ set_global_assignment -name QIP_FILE pll.qip
 set_global_assignment -name SIP_FILE pll.sip
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
 set_location_assignment PIN_AF14 -to ClOCK_50
-set_location_assignment PIN_AD11 -to input_0[4]
 set_location_assignment PIN_AF10 -to input_0[3]
 set_location_assignment PIN_AF9 -to input_0[2]
 set_location_assignment PIN_AC12 -to input_0[1]
 set_location_assignment PIN_AB12 -to input_0[0]
-set_location_assignment PIN_AE12 -to input_1[4]
-set_location_assignment PIN_AD10 -to input_1[3]
-set_location_assignment PIN_AC9 -to input_1[2]
-set_location_assignment PIN_AE11 -to input_1[1]
-set_location_assignment PIN_AD12 -to input_1[0]
+set_location_assignment PIN_AC9 -to input_1[3]
+set_location_assignment PIN_AE11 -to input_1[2]
+set_location_assignment PIN_AD12 -to input_1[1]
+set_location_assignment PIN_AD11 -to input_1[0]
 set_location_assignment PIN_Y16 -to resetn
 set_location_assignment PIN_AE26 -to out_0[0]
 set_location_assignment PIN_AE27 -to out_0[1]
@@ -139,8 +137,6 @@ set_location_assignment PIN_W17 -to testout[4]
 set_location_assignment PIN_W19 -to testout[5]
 set_location_assignment PIN_Y19 -to testout[6]
 set_location_assignment PIN_W20 -to testout[7]
-set_location_assignment PIN_W21 -to testout[8]
-set_location_assignment PIN_Y21 -to testout[9]
 set_global_assignment -name VERILOG_FILE source/frequency_divider.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top

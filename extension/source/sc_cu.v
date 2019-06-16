@@ -7,7 +7,8 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    output [1:0] pcsource;
    wire r_type = ~|op;
 	
-	wire i_;
+	wire i_hamd = r_type & func[5] & func[4] & func[3] &
+                func[2] & func[1] & func[0];
 	
    wire i_add = r_type & func[5] & ~func[4] & ~func[3] &
                 ~func[2] & ~func[1] & ~func[0];          //100000
@@ -51,12 +52,12 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    
    assign wreg = i_add | i_sub | i_and | i_or   | i_xor  |
                  i_sll | i_srl | i_sra | i_addi | i_andi |
-                 i_ori | i_xori | i_lw | i_lui  | i_jal;
+                 i_ori | i_xori | i_lw | i_lui  | i_jal | i_hamd;
    // complete by yourself.
-   assign aluc[3] = i_sra;
+   assign aluc[3] = i_sra | i_hamd;
    assign aluc[2] = i_sub | i_or | i_sra | i_srl | i_ori;
-   assign aluc[1] = i_xor | i_sll | i_sra | i_srl | i_xori;
-   assign aluc[0] = i_and | i_or | i_sll | i_sra | i_srl | i_andi | i_ori;
+   assign aluc[1] = i_xor | i_sll | i_sra | i_srl | i_xori | i_hamd;
+   assign aluc[0] = i_and | i_or | i_sll | i_sra | i_srl | i_andi | i_ori | i_hamd;
    assign shift   = i_sll | i_srl | i_sra ;
 	// complete by yourself.
    assign aluimm  = i_addi | i_andi | i_ori | i_xori | i_lw | i_sw | i_lui;

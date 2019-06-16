@@ -1,35 +1,18 @@
-DEPTH = 32;           % Memory depth and width are required %
+DEPTH = 16;           % Memory depth and width are required %
 WIDTH = 32;           % Enter a decimal number %
 ADDRESS_RADIX = HEX;  % Address and value radixes are optional %
 DATA_RADIX = HEX;     % Enter BIN, DEC, HEX, or OCT; unless %
                       % otherwise specified, radixes = HEX %
 CONTENT
 BEGIN
-[0..1F] : 00000000;   % Range--Every address from 0 to 1F = 00000000 %
+[0..F] : 00000000;   % Range--Every address from 0 to 1F = 00000000 %
 
- 0 : 20010080;        % (00)       addi  $1, $0, 128  #  %
- 1 : 20020084;        % (04)       addi  $2, $0, 132  #  %
- 2 : 20030088;        % (08)       addi  $3, $0, 136  #  %
- 3 : 2004008c;        % (0c)       addi   $4, $0, 140 #  %
- 4 : 20050090;        % (10)       addi   $5, $0, 144 #  %
- 5 : 20060094;        % (14)       addi   $6, $0, 148 #  %
- 6 : 200700c0;        % (18)       addi   $7, $0, 192 #  %
- 7 : 200800c4;        % (1c)       addi   $8, $0, 196 #  %
- 8 : 20090000;        % (20) loop: addi   $9, $0, 0   #  %
- 9 : 200a0000;        % (24)       addi   $10, $0, 0  #  %
- A : 8ce90000;        % (28)       lw   $9, 0($7)     #  %
- B : 8d0a0000;        % (2c)       lw  $10, 0($8)     #  %
- C : 012a5820;        % (30)       add  $11, $9, $10  #  %
- D : 012a6022;        % (34)       sub  $12, $9, $10  #  %
- E : 012a6824;        % (38)       and  $13, $9, $10  #  %
- F : 012a7025;        % (3c)       or  $14, $9, $10   #  %
-10 : 00097840;        % (40)       sll  $15, $9, 1    #  %
-11 : 000a8042;        % (44)       srl  $16, $10,1    #  %
-12 : ac2b0000;        % (48)       sw  $11, 0($1)     #  %
-13 : ac4c0000;        % (4c)       sw  $12, 0($2)     #  %
-14 : ac6d0000;        % (50)       sw  $13, 0($3)     #  %
-15 : ac8e0000;        % (54)       sw  $14, 0($4)     #  %
-16 : acaf0000;        % (58)       sw  $15, 0($5)     #  %
-17 : acd00000;        % (5c)       sw  $16, 0($6)     #  %
-18 : 08000008;        % (60)       j  loop            #  %
+0 : 20010080;        % (00)       addi  $1, $0, 128  #  %
+1 : 200200c0;        % (04)       addi   $2, $0, 192 #  %
+2 : 200300c4;        % (08)       addi   $3, $0, 196 #  %
+3 : 8c440000;        % (0c) loop: lw   $4, 0($2)     #  %
+4 : 8c650000;        % (10)       lw  $5, 0($3)      #  %
+5 : 00a4303f;        % (14)       add  $6, $5, $4    #  %
+6 : ac260000;        % (18)       sw  $6, 0($1)      #  %
+7 : 08000003;        % (1c)       j  loop            #  %
 END ;

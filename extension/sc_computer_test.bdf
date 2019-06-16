@@ -57,7 +57,7 @@ applicable agreement for further details.
 	(input)
 	(rect 264 296 432 312)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "input_0[4..0]" (rect 5 0 66 12)(font "Arial" ))
+	(text "input_0[3..0]" (rect 5 0 66 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -74,7 +74,7 @@ applicable agreement for further details.
 	(input)
 	(rect 264 312 432 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "input_1[4..0]" (rect 5 0 66 12)(font "Arial" ))
+	(text "input_1[3..0]" (rect 5 0 66 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -193,7 +193,7 @@ applicable agreement for further details.
 	(output)
 	(rect 1000 512 1176 528)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
-	(text "testout[9..0]" (rect 90 0 150 12)(font "Arial" ))
+	(text "testout[7..0]" (rect 90 0 150 12)(font "Arial" ))
 	(pt 0 8)
 	(drawing
 		(line (pt 0 8)(pt 52 8))
@@ -205,6 +205,28 @@ applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 	(annotation_block (location)(rect 1176 528 1240 544))
+)
+(symbol
+	(rect 480 128 624 208)
+	(text "half_frequency" (rect 5 0 80 12)(font "Arial" ))
+	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 14 12)(font "Arial" ))
+		(text "clk" (rect 21 27 35 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 144 32)
+		(output)
+		(text "CLOCK" (rect 0 0 37 12)(font "Arial" ))
+		(text "CLOCK" (rect 92 27 129 39)(font "Arial" ))
+		(line (pt 144 32)(pt 128 32))
+	)
+	(drawing
+		(rectangle (rect 16 16 128 64))
+	)
 )
 (symbol
 	(rect 680 224 888 464)
@@ -234,15 +256,15 @@ applicable agreement for further details.
 	(port
 		(pt 0 80)
 		(input)
-		(text "in_port0[4..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "in_port0[4..0]" (rect 21 75 85 87)(font "Arial" ))
+		(text "in_port0[3..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "in_port0[3..0]" (rect 21 75 85 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "in_port1[4..0]" (rect 0 0 64 12)(font "Arial" ))
-		(text "in_port1[4..0]" (rect 21 91 85 103)(font "Arial" ))
+		(text "in_port1[3..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "in_port1[3..0]" (rect 21 91 85 103)(font "Arial" ))
 		(line (pt 0 96)(pt 16 96)(line_width 3))
 	)
 	(port
@@ -318,34 +340,12 @@ applicable agreement for further details.
 	(port
 		(pt 208 192)
 		(output)
-		(text "leds[9..0]" (rect 0 0 46 12)(font "Arial" ))
-		(text "leds[9..0]" (rect 149 187 195 199)(font "Arial" ))
+		(text "leds[7..0]" (rect 0 0 46 12)(font "Arial" ))
+		(text "leds[7..0]" (rect 149 187 195 199)(font "Arial" ))
 		(line (pt 208 192)(pt 192 192)(line_width 3))
 	)
 	(drawing
 		(rectangle (rect 16 16 192 224))
-	)
-)
-(symbol
-	(rect 480 128 624 208)
-	(text "half_frequency" (rect 5 0 80 12)(font "Arial" ))
-	(text "inst1" (rect 8 64 31 76)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "clk" (rect 0 0 14 12)(font "Arial" ))
-		(text "clk" (rect 21 27 35 39)(font "Arial" ))
-		(line (pt 0 32)(pt 16 32))
-	)
-	(port
-		(pt 144 32)
-		(output)
-		(text "CLOCK" (rect 0 0 37 12)(font "Arial" ))
-		(text "CLOCK" (rect 92 27 129 39)(font "Arial" ))
-		(line (pt 144 32)(pt 128 32))
-	)
-	(drawing
-		(rectangle (rect 16 16 128 64))
 	)
 )
 (connector
@@ -436,18 +436,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "LED[9..0]" (rect 898 400 945 412)(font "Arial" ))
-	(pt 888 416)
-	(pt 1008 416)
-	(bus)
-)
-(connector
-	(text "LED[9..0]" (rect 906 504 953 516)(font "Arial" ))
-	(pt 1000 520)
-	(pt 896 520)
-	(bus)
-)
-(connector
 	(pt 480 160)
 	(pt 432 160)
 )
@@ -470,5 +458,17 @@ applicable agreement for further details.
 (connector
 	(pt 432 240)
 	(pt 640 240)
+)
+(connector
+	(text "LED[7..0]" (rect 898 400 945 412)(font "Arial" ))
+	(pt 888 416)
+	(pt 1008 416)
+	(bus)
+)
+(connector
+	(text "LED[7..0]" (rect 906 504 953 516)(font "Arial" ))
+	(pt 1000 520)
+	(pt 896 520)
+	(bus)
 )
 (junction (pt 432 200))

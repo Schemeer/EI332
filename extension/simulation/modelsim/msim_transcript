@@ -1,9 +1,5 @@
 # Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
 # do sc_computer_run_msim_rtl_verilog.do 
-# if ![file isdirectory sc_computer_iputf_libs] {
-# 	file mkdir sc_computer_iputf_libs
-# }
-# 
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
 # }
@@ -14,104 +10,92 @@
 # ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-###### Libraries for IPUTF cores 
-###### End libraries for IPUTF cores 
-###### MIF file copy and HDL compilation commands for IPUTF cores 
-# 
-# 
-# vlog "D:/ComputerOrganization/Experiment2/pll_sim/pll.vo"
-# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
-# -- Compiling module pll
-# 
-# Top level modules:
-# 	pll
-# 
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/sc_instmen.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/sc_instmen.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sc_instmem
 # 
 # Top level modules:
 # 	sc_instmem
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/sc_datamem.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/sc_datamem.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sc_datamem
 # 
 # Top level modules:
 # 	sc_datamem
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/sc_cu.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/sc_cu.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sc_cu
 # 
 # Top level modules:
 # 	sc_cu
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/sc_cpu.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/sc_cpu.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sc_cpu
 # 
 # Top level modules:
 # 	sc_cpu
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/sc_computer.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/sc_computer.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sc_computer
 # -- Compiling module sevenseg
 # 
 # Top level modules:
 # 	sc_computer
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/regfile.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/regfile.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module regfile
 # 
 # Top level modules:
 # 	regfile
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/mux4x32.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/mux4x32.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux4x32
 # 
 # Top level modules:
 # 	mux4x32
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/mux2x32.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/mux2x32.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux2x32
 # 
 # Top level modules:
 # 	mux2x32
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/mux2x5.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/mux2x5.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module mux2x5
 # 
 # Top level modules:
 # 	mux2x5
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/lpm_rom_irom.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/lpm_rom_irom.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module lpm_rom_irom
 # 
 # Top level modules:
 # 	lpm_rom_irom
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/lpm_ram_dq_dram.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/lpm_ram_dq_dram.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module lpm_ram_dq_dram
 # 
 # Top level modules:
 # 	lpm_ram_dq_dram
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/dff32.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/dff32.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module dff32
 # 
 # Top level modules:
 # 	dff32
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/alu.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/alu.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/io_output_reg.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/io_output_reg.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module io_output_reg
 # 
 # Top level modules:
 # 	io_output_reg
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2/source {D:/ComputerOrganization/Experiment2/source/io_input_reg.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/io_input_reg.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module io_input_reg
 # -- Compiling module io_input_mux
@@ -119,7 +103,7 @@
 # Top level modules:
 # 	io_input_reg
 # 
-# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/Experiment2 {D:/ComputerOrganization/Experiment2/sc_computer_sim.v}
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension {D:/ComputerOrganization/EI332/extension/sc_computer_sim.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module sc_computer_sim
 # 
@@ -157,4 +141,3 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 #                    0resetn=0 clock_50M=1  mem_clk =1
-#               125000out_port0 = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz  out_port1 = zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz 

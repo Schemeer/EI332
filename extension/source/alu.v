@@ -4,11 +4,16 @@ module alu (a,b,aluc,s,z);
    output [31:0] s;
    output        z;
    reg [31:0] s;
+	reg [31:0] t;
    reg        z;
    always @ (a or b or aluc) 
       begin                                   // event
          casex (aluc)
-				 4'b    : s =
+				 4'b1011:
+				 begin
+					t = a ^ b;
+					s = t[3] + t[2] + t[1] + t[0];
+				 end
              4'bx000: s = a + b;              //x000 ADD
              4'bx100: s = a - b;              //x100 SUB
              4'bx001: s = a & b;              //x001 AND

@@ -28,13 +28,13 @@ module sc_computer_sim;
     reg           resetn_sim;
     reg           clock_50M_sim;
 	 reg           mem_clk_sim;
-	 reg    [4:0] in_port0_sim;
-	 reg    [4:0] in_port1_sim;
+	 reg    [3:0] in_port0_sim;
+	 reg    [3:0] in_port1_sim;
 
 	 
 
     wire   [6:0]  hex0_sim,hex1_sim,hex2_sim,hex3_sim,hex4_sim,hex5_sim;
-	 wire   [9:0]  leds_sim;
+	 wire   [7:0]  leds_sim;
 	 
 	       
 //	 wire   [31:0]  in_port0_sim,in_port1_sim;

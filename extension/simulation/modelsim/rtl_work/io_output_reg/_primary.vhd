@@ -7,11 +7,6 @@ entity io_output_reg is
         write_io_enable : in     vl_logic;
         io_clk          : in     vl_logic;
         clrn            : in     vl_logic;
-        out_port0       : out    vl_logic_vector(31 downto 0);
-        out_port1       : out    vl_logic_vector(31 downto 0);
-        out_port2       : out    vl_logic_vector(31 downto 0);
-        out_port3       : out    vl_logic_vector(31 downto 0);
-        out_port4       : out    vl_logic_vector(31 downto 0);
-        out_port5       : out    vl_logic_vector(31 downto 0)
+        out_port        : out    vl_logic_vector(31 downto 0)
     );
 end io_output_reg;
