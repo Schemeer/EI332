@@ -4,10 +4,10 @@ K3
 cModel Technology
 Z0 dD:\ComputerOrganization\EI332\extension\simulation\modelsim
 valu
-Ina>OS=W=AD]oY=RQL>RGh2
+I1a7On9YTIDDY=8R61Kb>j2
 VKc:bVz32gc5X2ZbjUde9O3
 Z1 dD:\ComputerOrganization\EI332\extension\simulation\modelsim
-w1560574866
+w1560748110
 8D:/ComputerOrganization/EI332/extension/source/alu.v
 FD:/ComputerOrganization/EI332/extension/source/alu.v
 L0 1
@@ -17,9 +17,9 @@ r1
 Z3 o-vlog01compat -work work -O0
 Z4 !s92 -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source -O0
 !i10b 1
-!s100 c5<[SS]jZ?]h`E00[gbfV2
+!s100 gDG^59RCJeLRYTB:BK=j^2
 !s85 0
-!s108 1560661836.208000
+!s108 1560748133.789000
 !s107 D:/ComputerOrganization/EI332/extension/source/alu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/alu.v|
 !s101 -O0
@@ -39,24 +39,65 @@ R4
 !i10b 1
 !s100 P^6hkQ86JO`I0Y49[2NGz2
 !s85 0
-!s108 1560661836.078000
+!s108 1560748133.609000
 !s107 D:/ComputerOrganization/EI332/extension/source/dff32.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/dff32.v|
+!s101 -O0
+vfiftyMto100ms
+I@<;:UjnNXKE5D;IKmj1k82
+V7WkY8lXmL]<27F`jS6kGX2
+R1
+Z5 w1559652717
+Z6 8D:/ComputerOrganization/EI332/extension/source/frequency_divider.v
+Z7 FD:/ComputerOrganization/EI332/extension/source/frequency_divider.v
+L0 1
+R2
+r1
+31
+Z8 !s108 1560748134.259000
+Z9 !s107 D:/ComputerOrganization/EI332/extension/source/frequency_divider.v|
+Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/frequency_divider.v|
+R3
+R4
+nfifty@mto100ms
+!i10b 1
+!s100 G;<432T@P=ZigA^9G]CeW3
+!s85 0
+!s101 -O0
+vhalf_frequency
+IG]6bc4kGX<[z>D=g`Ukz=3
+VJdF8CnC1L^8EXzT1J4l4F0
+R1
+R5
+R6
+R7
+L0 24
+R2
+r1
+31
+R8
+R9
+R10
+R3
+R4
+!i10b 1
+!s100 6CDmc1iGELV@[PV5Ei6a=1
+!s85 0
 !s101 -O0
 vio_input_mux
 I>cRM]A_1;UV8SA2JZ7eDg3
 VE]W_C0AC;VoBAl[RC@dLB2
 R1
-Z5 w1560575754
-Z6 8D:/ComputerOrganization/EI332/extension/source/io_input_reg.v
-Z7 FD:/ComputerOrganization/EI332/extension/source/io_input_reg.v
+Z11 w1560575754
+Z12 8D:/ComputerOrganization/EI332/extension/source/io_input_reg.v
+Z13 FD:/ComputerOrganization/EI332/extension/source/io_input_reg.v
 L0 21
 R2
 r1
 31
-Z8 !s108 1560661836.468000
-Z9 !s107 D:/ComputerOrganization/EI332/extension/source/io_input_reg.v|
-Z10 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/io_input_reg.v|
+Z14 !s108 1560748134.049000
+Z15 !s107 D:/ComputerOrganization/EI332/extension/source/io_input_reg.v|
+Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/io_input_reg.v|
 R3
 R4
 !i10b 1
@@ -67,16 +108,16 @@ vio_input_reg
 IVGBRbm0Tb=<8nifg=N]?R0
 VlNTe^_]Jd:TL82RXdDhRY1
 R1
-R5
-R6
-R7
+R11
+R12
+R13
 L0 1
 R2
 r1
 31
-R8
-R9
-R10
+R14
+R15
+R16
 R3
 R4
 !i10b 1
@@ -99,7 +140,7 @@ R4
 !i10b 1
 !s100 @1YzR]R4dAF:0FDa>4afW0
 !s85 0
-!s108 1560661836.318000
+!s108 1560748133.919000
 !s107 D:/ComputerOrganization/EI332/extension/source/io_output_reg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/io_output_reg.v|
 !s101 -O0
@@ -119,7 +160,7 @@ R4
 !i10b 1
 !s100 7z@KWU=olj>><7;IeV>V`1
 !s85 0
-!s108 1560661835.968000
+!s108 1560748133.469000
 !s107 D:/ComputerOrganization/EI332/extension/source/lpm_ram_dq_dram.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/lpm_ram_dq_dram.v|
 !s101 -O0
@@ -139,7 +180,7 @@ R4
 !i10b 1
 !s100 dG6mb=k3XKIaLRm0iZHkT3
 !s85 0
-!s108 1560661835.838000
+!s108 1560748133.349000
 !s107 D:/ComputerOrganization/EI332/extension/source/lpm_rom_irom.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/lpm_rom_irom.v|
 !s101 -O0
@@ -159,7 +200,7 @@ R4
 !i10b 1
 !s100 D5i=TZXcLPLUI^RVnBL=90
 !s85 0
-!s108 1560661835.548000
+!s108 1560748133.119000
 !s107 D:/ComputerOrganization/EI332/extension/source/mux2x32.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/mux2x32.v|
 !s101 -O0
@@ -179,7 +220,7 @@ R4
 !i10b 1
 !s100 GdI`o7zCPR1To4ooR4GTF3
 !s85 0
-!s108 1560661835.678000
+!s108 1560748133.219000
 !s107 D:/ComputerOrganization/EI332/extension/source/mux2x5.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/mux2x5.v|
 !s101 -O0
@@ -199,7 +240,7 @@ R4
 !i10b 1
 !s100 djl69O<G2j2ikLMMNQk5W3
 !s85 0
-!s108 1560661835.408000
+!s108 1560748133.009000
 !s107 D:/ComputerOrganization/EI332/extension/source/mux4x32.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/mux4x32.v|
 !s101 -O0
@@ -219,7 +260,7 @@ R4
 !i10b 1
 !s100 8@l<Me=TkmU8@hGWL;oJe3
 !s85 0
-!s108 1560661835.288000
+!s108 1560748132.869000
 !s107 D:/ComputerOrganization/EI332/extension/source/regfile.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/regfile.v|
 !s101 -O0
@@ -227,16 +268,16 @@ vsc_computer
 Ibe4I;2ZOUmQ^NY4mm@87W3
 V;CF=@c4FoQH>UeBgh@PKR0
 R1
-Z11 w1560661618
-Z12 8D:/ComputerOrganization/EI332/extension/source/sc_computer.v
-Z13 FD:/ComputerOrganization/EI332/extension/source/sc_computer.v
+Z17 w1560661618
+Z18 8D:/ComputerOrganization/EI332/extension/source/sc_computer.v
+Z19 FD:/ComputerOrganization/EI332/extension/source/sc_computer.v
 L0 1
 R2
 r1
 31
-Z14 !s108 1560661835.108000
-Z15 !s107 D:/ComputerOrganization/EI332/extension/source/sc_computer.v|
-Z16 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/sc_computer.v|
+Z20 !s108 1560748132.689000
+Z21 !s107 D:/ComputerOrganization/EI332/extension/source/sc_computer.v|
+Z22 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/sc_computer.v|
 R3
 R4
 !i10b 1
@@ -245,11 +286,11 @@ R4
 !s101 -O0
 vsc_computer_sim
 !i10b 1
-!s100 W>IS39CoCO@nWnTDFV7fn0
-IW_SIJiek3?M44X>Z]6d]z3
+!s100 FF45ISg8K9?e>:W=nFeWQ1
+Iaf09]TeYCi9m9b5G4bcb<1
 V^jiC<6F7]doek[nRMoOol1
 R1
-w1560575743
+w1560744635
 8D:/ComputerOrganization/EI332/extension/sc_computer_sim.v
 FD:/ComputerOrganization/EI332/extension/sc_computer_sim.v
 L0 26
@@ -257,7 +298,7 @@ R2
 r1
 !s85 0
 31
-!s108 1560661836.758000
+!s108 1560748134.539000
 !s107 D:/ComputerOrganization/EI332/extension/sc_computer_sim.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension|D:/ComputerOrganization/EI332/extension/sc_computer_sim.v|
 !s101 -O0
@@ -279,15 +320,15 @@ R4
 !i10b 1
 !s100 engSV=7C@kAiIKGY6Ab?f3
 !s85 0
-!s108 1560661834.978000
+!s108 1560748132.549000
 !s107 D:/ComputerOrganization/EI332/extension/source/sc_cpu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/sc_cpu.v|
 !s101 -O0
 vsc_cu
-I9[9Q8f9UJ:hA4J<mziEKz2
+IY8hi9Wm;I3h8]l0IIcU790
 VAlN72Pg@l_c4ao;V0co7c3
 R1
-w1560574778
+w1560747938
 8D:/ComputerOrganization/EI332/extension/source/sc_cu.v
 FD:/ComputerOrganization/EI332/extension/source/sc_cu.v
 L0 1
@@ -297,9 +338,9 @@ r1
 R3
 R4
 !i10b 1
-!s100 ZhLcohme<h0i0AA;1fGEQ0
+!s100 `kai[HFR9m[^X3E?nOUAb0
 !s85 0
-!s108 1560661834.858000
+!s108 1560748132.409000
 !s107 D:/ComputerOrganization/EI332/extension/source/sc_cu.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/sc_cu.v|
 !s101 -O0
@@ -319,7 +360,7 @@ R4
 !i10b 1
 !s100 c2?BN6P3P^JFjDo0l[LBo3
 !s85 0
-!s108 1560661834.748000
+!s108 1560748132.259000
 !s107 D:/ComputerOrganization/EI332/extension/source/sc_datamem.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/sc_datamem.v|
 !s101 -O0
@@ -339,7 +380,7 @@ R4
 !i10b 1
 !s100 TeH[[`_L=eV_mRhiCbSjF1
 !s85 0
-!s108 1560661834.548000
+!s108 1560748132.039000
 !s107 D:/ComputerOrganization/EI332/extension/source/sc_instmen.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/ComputerOrganization/EI332/extension/source|D:/ComputerOrganization/EI332/extension/source/sc_instmen.v|
 !s101 -O0
@@ -347,16 +388,16 @@ vsevenseg
 IUI<7Dz1LmNR^HVH4fLN[E3
 V<kz4<ET@H::]Aoef`6B9U3
 R1
-R11
-R12
-R13
+R17
+R18
+R19
 L0 33
 R2
 r1
 31
-R14
-R15
-R16
+R20
+R21
+R22
 R3
 R4
 !i10b 1

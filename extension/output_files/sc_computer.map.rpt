@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sc_computer
-Sun Jun 16 13:12:26 2019
+Mon Jun 17 13:38:18 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -56,14 +56,14 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Jun 16 13:12:26 2019      ;
+; Analysis & Synthesis Status     ; Successful - Mon Jun 17 13:38:18 2019      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; sc_computer                                ;
 ; Top-level Entity Name           ; sc_computer_test                           ;
 ; Family                          ; Cyclone V                                  ;
 ; Logic utilization (in ALMs)     ; N/A                                        ;
-; Total registers                 ; 1058                                       ;
-; Total pins                      ; 60                                         ;
+; Total registers                 ; 1071                                       ;
+; Total pins                      ; 17                                         ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 3,072                                      ;
 ; Total DSP Blocks                ; 0                                          ;
@@ -213,37 +213,37 @@ applicable agreement for further details.
 ; altram.inc                       ; yes             ; Megafunction                           ; c:/altera/13.1/quartus/libraries/megafunctions/altram.inc            ;         ;
 ; altdpram.inc                     ; yes             ; Megafunction                           ; c:/altera/13.1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
 ; db/altsyncram_oqi1.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/ComputerOrganization/EI332/extension/db/altsyncram_oqi1.tdf       ;         ;
-; source/sc_instmem.mif            ; yes             ; Auto-Found Memory Initialization File  ; D:/ComputerOrganization/EI332/extension/source/sc_instmem.mif        ;         ;
+; ./source/sc_instmem.mif          ; yes             ; Auto-Found Memory Initialization File  ; D:/ComputerOrganization/EI332/extension/source/sc_instmem.mif        ;         ;
 ; db/altsyncram_59m1.tdf           ; yes             ; Auto-Generated Megafunction            ; D:/ComputerOrganization/EI332/extension/db/altsyncram_59m1.tdf       ;         ;
 ; source/sc_datamem.mif            ; yes             ; Auto-Found Memory Initialization File  ; D:/ComputerOrganization/EI332/extension/source/sc_datamem.mif        ;         ;
 +----------------------------------+-----------------+----------------------------------------+----------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 1342         ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 1643         ;
-;     -- 7 input functions                    ; 45           ;
-;     -- 6 input functions                    ; 887          ;
-;     -- 5 input functions                    ; 323          ;
-;     -- 4 input functions                    ; 162          ;
-;     -- <=3 input functions                  ; 226          ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 1058         ;
-;                                             ;              ;
-; I/O pins                                    ; 60           ;
-; Total MLAB memory bits                      ; 0            ;
-; Total block memory bits                     ; 3072         ;
-; Total DSP Blocks                            ; 0            ;
-; Maximum fan-out node                        ; resetn~input ;
-; Maximum fan-out                             ; 1048         ;
-; Total fan-out                               ; 13292        ;
-; Average fan-out                             ; 4.61         ;
-+---------------------------------------------+--------------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1374                       ;
+;                                             ;                            ;
+; Combinational ALUT usage for logic          ; 1693                       ;
+;     -- 7 input functions                    ; 55                         ;
+;     -- 6 input functions                    ; 891                        ;
+;     -- 5 input functions                    ; 335                        ;
+;     -- 4 input functions                    ; 136                        ;
+;     -- <=3 input functions                  ; 276                        ;
+;                                             ;                            ;
+; Dedicated logic registers                   ; 1071                       ;
+;                                             ;                            ;
+; I/O pins                                    ; 17                         ;
+; Total MLAB memory bits                      ; 0                          ;
+; Total block memory bits                     ; 3072                       ;
+; Total DSP Blocks                            ; 0                          ;
+; Maximum fan-out node                        ; half_frequency:inst1|CLOCK ;
+; Maximum fan-out                             ; 1029                       ;
+; Total fan-out                               ; 13358                      ;
+; Average fan-out                             ; 4.67                       ;
++---------------------------------------------+----------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -251,22 +251,23 @@ applicable agreement for further details.
 +-------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                    ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |sc_computer_test                               ; 1643 (0)          ; 1058 (0)     ; 3072              ; 0          ; 60   ; 0            ; |sc_computer_test                                                                                                                      ; work         ;
+; |sc_computer_test                               ; 1693 (0)          ; 1071 (0)     ; 3072              ; 0          ; 17   ; 0            ; |sc_computer_test                                                                                                                      ; work         ;
+;    |fiftyMto100ms:inst2|                        ; 40 (40)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|fiftyMto100ms:inst2                                                                                                  ; work         ;
 ;    |half_frequency:inst1|                       ; 1 (1)             ; 2 (2)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|half_frequency:inst1                                                                                                 ; work         ;
-;    |sc_computer:inst|                           ; 1642 (0)          ; 1056 (0)     ; 3072              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst                                                                                                     ; work         ;
-;       |sc_cpu:cpu|                              ; 1587 (65)         ; 1024 (0)     ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu                                                                                          ; work         ;
-;          |alu:al_unit|                          ; 533 (533)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit                                                                              ; work         ;
+;    |sc_computer:inst|                           ; 1652 (0)          ; 1036 (0)     ; 3072              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst                                                                                                     ; work         ;
+;       |sc_cpu:cpu|                              ; 1630 (65)         ; 1024 (0)     ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu                                                                                          ; work         ;
+;          |alu:al_unit|                          ; 575 (575)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit                                                                              ; work         ;
 ;          |dff32:ip|                             ; 29 (29)           ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|dff32:ip                                                                                 ; work         ;
-;          |mux2x32:alu_a|                        ; 40 (40)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:alu_a                                                                            ; work         ;
-;          |mux2x32:alu_b|                        ; 41 (41)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:alu_b                                                                            ; work         ;
-;          |mux2x32:link|                         ; 35 (35)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:link                                                                             ; work         ;
+;          |mux2x32:alu_a|                        ; 37 (37)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:alu_a                                                                            ; work         ;
+;          |mux2x32:alu_b|                        ; 39 (39)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:alu_b                                                                            ; work         ;
+;          |mux2x32:link|                         ; 37 (37)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:link                                                                             ; work         ;
 ;          |mux4x32:nextpc|                       ; 36 (36)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux4x32:nextpc                                                                           ; work         ;
-;          |regfile:rf|                           ; 776 (776)         ; 992 (992)    ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf                                                                               ; work         ;
+;          |regfile:rf|                           ; 780 (780)         ; 992 (992)    ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf                                                                               ; work         ;
 ;          |sc_cu:cu|                             ; 32 (32)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|sc_cu:cu                                                                                 ; work         ;
-;       |sc_datamem:dmem|                         ; 12 (2)            ; 32 (0)       ; 1024              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem                                                                                     ; work         ;
-;          |io_input_reg:io_input_regx2|          ; 9 (0)             ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2                                                         ; work         ;
-;             |io_input_mux:io_input_mux2x32|     ; 9 (9)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32                           ; work         ;
-;          |io_output_reg:io_output_regx2|        ; 1 (1)             ; 24 (24)      ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|io_output_reg:io_output_regx2                                                       ; work         ;
+;       |sc_datamem:dmem|                         ; 14 (2)            ; 12 (0)       ; 1024              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem                                                                                     ; work         ;
+;          |io_input_reg:io_input_regx2|          ; 11 (0)            ; 8 (8)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2                                                         ; work         ;
+;             |io_input_mux:io_input_mux2x32|     ; 11 (11)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32                           ; work         ;
+;          |io_output_reg:io_output_regx2|        ; 1 (1)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|io_output_reg:io_output_regx2                                                       ; work         ;
 ;          |lpm_ram_dq_dram:dram|                 ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|lpm_ram_dq_dram:dram                                                                ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|lpm_ram_dq_dram:dram|altsyncram:altsyncram_component                                ; work         ;
 ;                |altsyncram_59m1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1024              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_datamem:dmem|lpm_ram_dq_dram:dram|altsyncram:altsyncram_component|altsyncram_59m1:auto_generated ; work         ;
@@ -274,11 +275,6 @@ applicable agreement for further details.
 ;          |lpm_rom_irom:irom|                    ; 0 (0)             ; 0 (0)        ; 2048              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_instmem:imem|lpm_rom_irom:irom                                                                   ; work         ;
 ;             |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 2048              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_instmem:imem|lpm_rom_irom:irom|altsyncram:altsyncram_component                                   ; work         ;
 ;                |altsyncram_oqi1:auto_generated| ; 0 (0)             ; 0 (0)        ; 2048              ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sc_instmem:imem|lpm_rom_irom:irom|altsyncram:altsyncram_component|altsyncram_oqi1:auto_generated    ; work         ;
-;       |sevenseg:sevenseg0|                      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sevenseg:sevenseg0                                                                                  ; work         ;
-;       |sevenseg:sevenseg1|                      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sevenseg:sevenseg1                                                                                  ; work         ;
-;       |sevenseg:sevenseg2|                      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sevenseg:sevenseg2                                                                                  ; work         ;
-;       |sevenseg:sevenseg3|                      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sevenseg:sevenseg3                                                                                  ; work         ;
-;       |sevenseg:sevenseg4|                      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sevenseg:sevenseg4                                                                                  ; work         ;
 ;       |sevenseg:sevenseg5|                      ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |sc_computer_test|sc_computer:inst|sevenseg:sevenseg5                                                                                  ; work         ;
 +-------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -304,17 +300,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+-------------------------------------------------------------------------+------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                                                                                                                                            ;
-+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------------+
-; Latch Name                                                                                      ; Latch Enable Signal                                                                                 ; Free of Timing Hazards ;
-+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------------+
-; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[0] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|WideNor0 ; yes                    ;
-; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[1] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|WideNor0 ; yes                    ;
-; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[2] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|WideNor0 ; yes                    ;
-; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[3] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|WideNor0 ; yes                    ;
-; Number of user-specified and inferred latches = 4                                               ;                                                                                                     ;                        ;
-+-------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                                                                                                                          ;
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------+
+; Latch Name                                                                                      ; Latch Enable Signal                                                                               ; Free of Timing Hazards ;
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------+
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[0] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[7] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[1] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[5] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[6] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[2] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[3] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[4] ; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|Equal0 ; yes                    ;
+; Number of user-specified and inferred latches = 8                                               ;                                                                                                   ;                        ;
++-------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -323,9 +323,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +-----------------------------------------------------------------------------+----------------------------------------+
 ; Register name                                                               ; Reason for Removal                     ;
 +-----------------------------------------------------------------------------+----------------------------------------+
-; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|in_reg1[4..31] ; Stuck at GND due to stuck port data_in ;
-; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|in_reg0[4..31] ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 56                                      ;                                        ;
+; sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|in_reg0[8..31] ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 24                                      ;                                        ;
 +-----------------------------------------------------------------------------+----------------------------------------+
 
 
@@ -334,12 +333,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1058  ;
+; Total registers                              ; 1071  ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 1048  ;
+; Number of registers using Asynchronous Clear ; 1028  ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1018  ;
+; Number of registers using Clock Enable       ; 998   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -356,22 +355,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[5]  ; 2       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[6]  ; 2       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[7]  ; 2       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[9]  ; 1       ;
+; fiftyMto100ms:inst2|CLOCK                  ; 5       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[8]  ; 1       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[23] ; 1       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[14] ; 1       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[13] ; 1       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[12] ; 1       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[11] ; 1       ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[9]  ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[10] ; 1       ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[11] ; 1       ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[12] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[19] ; 1       ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[31] ; 1       ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[14] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[18] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[17] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[16] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[15] ; 1       ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[13] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[25] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[24] ; 1       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[22] ; 1       ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[23] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[21] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[20] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[30] ; 1       ;
@@ -379,8 +379,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[28] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[27] ; 1       ;
 ; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[26] ; 1       ;
-; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[31] ; 1       ;
-; Total number of inverted registers = 31    ;         ;
+; sc_computer:inst|sc_cpu:cpu|dff32:ip|q[22] ; 1       ;
+; Total number of inverted registers = 32    ;         ;
 +--------------------------------------------+---------+
 
 
@@ -391,22 +391,23 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|dff32:ip|q[0]           ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|dff32:ip|q[28]          ;
-; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|dff32:ip|q[20]          ;
+; 4:1                ; 26 bits   ; 52 LEs        ; 52 LEs               ; 0 LEs                  ; Yes        ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|dff32:ip|q[13]          ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|ShiftLeft0  ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|ShiftRight0 ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|ShiftRight1 ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|ShiftLeft0  ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|ShiftLeft0  ;
-; 4:1                ; 28 bits   ; 56 LEs        ; 56 LEs               ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:link|y[6]       ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:link|y[1]       ;
-; 32:1               ; 8 bits    ; 168 LEs       ; 168 LEs              ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf|qb[31]       ;
-; 32:1               ; 24 bits   ; 504 LEs       ; 504 LEs              ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf|qb[3]        ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf|qa[16]       ;
-; 22:1               ; 7 bits    ; 98 LEs        ; 70 LEs               ; 28 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux23       ;
-; 23:1               ; 11 bits   ; 165 LEs       ; 110 LEs              ; 55 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux14       ;
-; 23:1               ; 4 bits    ; 60 LEs        ; 44 LEs               ; 16 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux24       ;
-; 24:1               ; 2 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux30       ;
-; 25:1               ; 3 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux3        ;
+; 4:1                ; 24 bits   ; 48 LEs        ; 48 LEs               ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:link|y[29]      ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|mux2x32:link|y[3]       ;
+; 32:1               ; 28 bits   ; 588 LEs       ; 588 LEs              ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf|qb[7]        ;
+; 32:1               ; 4 bits    ; 84 LEs        ; 84 LEs               ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf|qb[2]        ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 672 LEs              ; 0 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|regfile:rf|qa[17]       ;
+; 22:1               ; 7 bits    ; 98 LEs        ; 70 LEs               ; 28 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux17       ;
+; 23:1               ; 11 bits   ; 165 LEs       ; 110 LEs              ; 55 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux5        ;
+; 23:1               ; 2 bits    ; 30 LEs        ; 22 LEs               ; 8 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux24       ;
+; 23:1               ; 2 bits    ; 30 LEs        ; 22 LEs               ; 8 LEs                  ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux26       ;
+; 24:1               ; 3 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux28       ;
+; 25:1               ; 3 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |sc_computer_test|sc_computer:inst|sc_cpu:cpu|alu:al_unit|Mux1        ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------+
 
 
@@ -581,14 +582,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+---------------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "sc_computer:inst|sc_datamem:dmem"                                                               ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port             ; Type   ; Severity ; Details                                                                             ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
-; dmem_clk         ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; out_port[31..24] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------------------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "sc_computer:inst|sc_datamem:dmem"                                                              ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port            ; Type   ; Severity ; Details                                                                             ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
+; dmem_clk        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; out_port[31..4] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------+
@@ -633,7 +634,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 16 13:12:18 2019
+    Info: Processing started: Mon Jun 17 13:38:10 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sc_computer -c sc_computer
 Warning (125092): Tcl Script File pll.qip not found
     Info (125063): set_global_assignment -name QIP_FILE pll.qip
@@ -681,8 +682,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file sc_comp
 Info (12021): Found 2 design units, including 2 entities, in source file source/frequency_divider.v
     Info (12023): Found entity 1: fiftyMto100ms
     Info (12023): Found entity 2: half_frequency
-Warning (10227): Verilog HDL Port Declaration warning at sc_computer.v(36): data type declaration for "ledsegments" declares packed dimensions but the port declaration declaration does not
-Info (10499): HDL info at sc_computer.v(35): see declaration for object "ledsegments"
+Warning (10227): Verilog HDL Port Declaration warning at sc_computer.v(29): data type declaration for "ledsegments" declares packed dimensions but the port declaration declaration does not
+Info (10499): HDL info at sc_computer.v(28): see declaration for object "ledsegments"
 Info (12127): Elaborating entity "sc_computer_test" for the top level hierarchy
 Info (12128): Elaborating entity "sc_computer" for hierarchy "sc_computer:inst"
 Info (12128): Elaborating entity "sc_cpu" for hierarchy "sc_computer:inst|sc_cpu:cpu"
@@ -718,6 +719,15 @@ Warning (287001): Assertion warning: Device family Cyclone V does not have M4K b
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_oqi1.tdf
     Info (12023): Found entity 1: altsyncram_oqi1
 Info (12128): Elaborating entity "altsyncram_oqi1" for hierarchy "sc_computer:inst|sc_instmem:imem|lpm_rom_irom:irom|altsyncram:altsyncram_component|altsyncram_oqi1:auto_generated"
+Warning (113031): 7 out of 8 addresses are reinitialized. The latest initialized data will replace the existing data. There are 7 warnings found, and 7 warnings are reported.
+    Warning (113030): Memory Initialization File address 0 is reinitialized
+    Warning (113030): Memory Initialization File address 1 is reinitialized
+    Warning (113030): Memory Initialization File address 2 is reinitialized
+    Warning (113030): Memory Initialization File address 3 is reinitialized
+    Warning (113030): Memory Initialization File address 4 is reinitialized
+    Warning (113030): Memory Initialization File address 5 is reinitialized
+    Warning (113030): Memory Initialization File address 6 is reinitialized
+Critical Warning (127005): Memory depth (64) in the design file differs from memory depth (8) in the Memory Initialization File "D:/ComputerOrganization/EI332/extension/source/sc_instmem.mif" -- setting initial value for remaining addresses to 0
 Info (12128): Elaborating entity "sc_datamem" for hierarchy "sc_computer:inst|sc_datamem:dmem"
 Info (12128): Elaborating entity "lpm_ram_dq_dram" for hierarchy "sc_computer:inst|sc_datamem:dmem|lpm_ram_dq_dram:dram"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "sc_computer:inst|sc_datamem:dmem|lpm_ram_dq_dram:dram|altsyncram:altsyncram_component"
@@ -781,25 +791,18 @@ Info (10041): Inferred latch for "y[30]" at io_input_reg.v(29)
 Info (10041): Inferred latch for "y[31]" at io_input_reg.v(29)
 Info (12128): Elaborating entity "sevenseg" for hierarchy "sc_computer:inst|sevenseg:sevenseg5"
 Info (12128): Elaborating entity "half_frequency" for hierarchy "half_frequency:inst1"
-Warning (13012): Latch sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal sc_computer:inst|sc_cpu:cpu|sc_cu:cu|aluc[1]
-Warning (13012): Latch sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal sc_computer:inst|sc_cpu:cpu|sc_cu:cu|aluc[1]
-Warning (13012): Latch sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal sc_computer:inst|sc_cpu:cpu|sc_cu:cu|aluc[1]
-Warning (13012): Latch sc_computer:inst|sc_datamem:dmem|io_input_reg:io_input_regx2|io_input_mux:io_input_mux2x32|y[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal sc_computer:inst|sc_cpu:cpu|sc_cu:cu|aluc[1]
+Info (12128): Elaborating entity "fiftyMto100ms" for hierarchy "fiftyMto100ms:inst2"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2792 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2779 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 50 output pins
-    Info (21061): Implemented 2668 logic cells
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 2698 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
-    Info: Peak virtual memory: 4750 megabytes
-    Info: Processing ended: Sun Jun 16 13:12:26 2019
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4746 megabytes
+    Info: Processing ended: Mon Jun 17 13:38:18 2019
     Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:08
 

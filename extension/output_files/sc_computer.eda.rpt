@@ -1,5 +1,5 @@
 EDA Netlist Writer report for sc_computer
-Sun Jun 16 13:14:32 2019
+Mon Jun 17 13:39:37 2019
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sun Jun 16 13:14:32 2019 ;
+; EDA Netlist Writer Status ; Successful - Mon Jun 17 13:39:37 2019 ;
 ; Revision Name             ; sc_computer                           ;
 ; Top-level Entity Name     ; sc_computer_test                      ;
 ; Family                    ; Cyclone V                             ;
@@ -81,13 +81,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Sun Jun 16 13:14:30 2019
+    Info: Processing started: Mon Jun 17 13:39:35 2019
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off sc_computer -c sc_computer
 Warning (10905): Generated the EDA functional simulation files although EDA timing simulation option is chosen.
 Info (204019): Generated file sc_computer.vo in folder "D:/ComputerOrganization/EI332/extension/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4709 megabytes
-    Info: Processing ended: Sun Jun 16 13:14:32 2019
+    Info: Peak virtual memory: 4702 megabytes
+    Info: Processing ended: Mon Jun 17 13:39:37 2019
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

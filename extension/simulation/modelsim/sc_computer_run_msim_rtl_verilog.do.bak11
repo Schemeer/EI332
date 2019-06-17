@@ -20,6 +20,7 @@ vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/so
 vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/alu.v}
 vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/io_output_reg.v}
 vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/io_input_reg.v}
+vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/frequency_divider.v}
 
 vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension {D:/ComputerOrganization/EI332/extension/sc_computer_sim.v}
 

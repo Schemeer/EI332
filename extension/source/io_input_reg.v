@@ -1,7 +1,7 @@
-module io_input_reg(addr,io_clk,io_read_data,in_port0,in_port1);
+module io_input_reg(addr,io_clk,io_read_data,in_port0);
 	
 	input		[31:0]	addr;
-	input		[3:0]	in_port0,in_port1;
+	input		[7:0]	in_port0;
 	input					io_clk;
 	
 	output	[31:0]	io_read_data;
@@ -12,8 +12,8 @@ module io_input_reg(addr,io_clk,io_read_data,in_port0,in_port1);
 	
 	always @(posedge io_clk)
 		begin
-			in_reg0 <= {28'b0,in_port0};
-			in_reg1 <= {28'b0,in_port1};
+			in_reg0 <= {24'b0,in_port0};
+			in_reg1 <= {24'b0,in_port0};
 		end
 
 endmodule
@@ -28,6 +28,5 @@ module	io_input_mux(a0,a1,sel_addr,y);
 	always @ *
 		case(sel_addr)
 			6'b110000: y = a0;
-			6'b110001: y = a1;
 		endcase
 endmodule

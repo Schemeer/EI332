@@ -97,7 +97,7 @@ module sc_computer_sim;
 	 
 	 initial
 	     begin
-		      in_port0_sim = 5;
+		      in_port0_sim = 2;
 				in_port1_sim = 4;
 		  end
 

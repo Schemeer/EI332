@@ -102,6 +102,14 @@
 # 
 # Top level modules:
 # 	io_input_reg
+# vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension/source {D:/ComputerOrganization/EI332/extension/source/frequency_divider.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fiftyMto100ms
+# -- Compiling module half_frequency
+# 
+# Top level modules:
+# 	fiftyMto100ms
+# 	half_frequency
 # 
 # vlog -vlog01compat -work work +incdir+D:/ComputerOrganization/EI332/extension {D:/ComputerOrganization/EI332/extension/sc_computer_sim.v}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012

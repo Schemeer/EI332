@@ -33,7 +33,8 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    wire i_jr  =  r_type & ~func[5] & ~func[4] & func[3] &
                 ~func[2] & ~func[1] & ~func[0];          //001000
                 
-   wire i_addi = ~op[5] & ~op[4] &  op[3] & ~op[2] & ~op[1] & ~op[0]; //001000
+
+	wire i_addi = ~op[5] & ~op[4] &  op[3] & ~op[2] & ~op[1] & ~op[0]; //001000
    wire i_andi = ~op[5] & ~op[4] &  op[3] &  op[2] & ~op[1] & ~op[0]; //001100
    // complete by yourself.
    wire i_ori  = ~op[5] & ~op[4] &  op[3] &  op[2] & ~op[1] & op[0]; //001101     
@@ -61,7 +62,7 @@ module sc_cu (op, func, z, wmem, wreg, regrt, m2reg, aluc, shift,
    assign shift   = i_sll | i_srl | i_sra ;
 	// complete by yourself.
    assign aluimm  = i_addi | i_andi | i_ori | i_xori | i_lw | i_sw | i_lui;
-   assign sext    = i_addi | i_lw | i_sw | i_beq | i_bne;
+   assign sext    = i_addi | i_lw | i_sw | i_beq | i_bne ;
    assign wmem    = i_sw;
    assign m2reg   = i_lw;
    assign regrt   = i_addi | i_andi | i_ori | i_xori | i_lw | i_sw;
